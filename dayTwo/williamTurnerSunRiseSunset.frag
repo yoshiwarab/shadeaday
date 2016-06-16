@@ -37,7 +37,6 @@ void main() {
     color = mix(colorA, colorB, smoothstep(0.0, 0.4, st.y));
     color = mix(color, colorB, smoothstep(0.4, 0.9, st.y));
     color = mix(color, colorC, smoothstep(0.5 - abs(sin(u_time)/3.), 0.9, st.y));
-    color = mix(color, vec3(0.0,0.0,0.0), sin(u_time)/2.);
 
 
     // Plot transition lines for each channel
